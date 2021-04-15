@@ -1,0 +1,16 @@
+/* body {
+    background-color: #e7653e;
+} */
+
+/* HEADER */
+#section-header .nav-link {
+    color: #e7653e;
+    -webkit-text-stroke: 1px;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+/* DESCRIPTION */
+#section-description .content-image {
+    border-radius: 10px;
+    overflow: hidden;
+}
