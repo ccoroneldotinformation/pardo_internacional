@@ -1,9 +1,9 @@
 :root {
     --blue-main: #353370;
-    --blue-primary: #024480;
+    --blue-primary: rgb(2, 68, 128);
     --orange-main: #e94116;
     --widht-soft: #eaeaeb;
-    --brown-base: #453328;
+    --brown-base: rgb(69, 51, 40);
 }
 
 body {
@@ -20,27 +20,27 @@ body {
     font-family: 'Archivo Black', sans-serif;
 }
 
-/* MEDIA */
-#section-media {
-    height: 100vh;
-    /* background-color: var(--brown-base); */
-}
-#section-media .card-img-overlay {
-    background-color: var(--blue-primary);
-    opacity: 0.3;
-}
-
 /* DESCRIPTION */
-#section-description .content-image {
+#section-description {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.5em;
+}
+/* #section-description .content-image {
     border-radius: 10px;
     overflow: hidden;
 }
+#section-description img {
+    filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.7));
+} */
 
 /* FOOTER */
 #section-footer {
-    background-image: url('../img/background-orange.png');
-    color: whitesmoke;
+    background-color: var(--blue-primary);
+    color: var(--widht-soft);
 }
+/* #section-footer .row {
+    background-color: rgba(2, 68, 128, 0.2);
+} */
 #section-footer hr {
     border: 2px solid var(--brown-base);
     border-radius: 2px;
