@@ -1,7 +1,7 @@
 :root {
     --blue-main: #353370;
     --blue-primary: rgb(2, 68, 128);
-    --orange-main: #e94116;
+    --orange-main: rgb(233, 65, 22);
     --widht-soft: #eaeaeb;
     --brown-base: rgb(69, 51, 40);
 }
@@ -25,22 +25,19 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 1.5em;
 }
-/* #section-description .content-image {
-    border-radius: 10px;
-    overflow: hidden;
+#section-description .card {
+    cursor: pointer;
 }
-#section-description img {
-    filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.7));
-} */
+#section-description .card .card-title {
+    background-color: rgba(233, 65, 22, 0.5);
+}
 
 /* FOOTER */
 #section-footer {
     background-color: var(--blue-primary);
     color: var(--widht-soft);
 }
-/* #section-footer .row {
-    background-color: rgba(2, 68, 128, 0.2);
-} */
+
 #section-footer hr {
     border: 2px solid var(--brown-base);
     border-radius: 2px;
