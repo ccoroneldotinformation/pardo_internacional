@@ -21,10 +21,6 @@ body {
 }
 
 /* MEDIA */
-#section-media {
-    height: 100vh;
-    /* background-color: var(--brown-base); */
-}
 #section-media .card-img-overlay {
     background-color: var(--blue-primary);
     opacity: 0.3;
