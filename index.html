@@ -24,6 +24,8 @@
 
   <!-- select2 -->
   <link rel="stylesheet" href="resources/select2_v4.0.3/css/select2.min.css">
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@ttskch/select2-bootstrap4-theme@x.x.x/dist/select2-bootstrap4.min.css">
 
   <!-- Customizado -->
   <link type="text/css" rel="stylesheet" href="assets/css/customize-index.css" />
@@ -41,16 +43,12 @@
         </a>
         <button class="navbar-toggler col" type="button" data-toggle="collapse" data-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <i class="fas fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse col" id="navbarNav">
           <ul class="navbar-nav mx-auto">
-            <!-- <li class="nav-item active">
-              <a class="nav-link active" href="index.html">INICIO <span class="sr-only">(current)</span></a>
-            </li> -->
             <li class="nav-item">
               <a class="nav-link" href="nosotros.html">NOSOTROS</a>
-
             </li>
             <li class="nav-item">
               <a class="nav-link" href="servicios.html">SERVICIOS</a>
@@ -70,9 +68,9 @@
   </section>
 
   <section id="section-media">
-    <div class="card bg-dark text-white">
-      <video src="resources/plays/ayacucho_540_26MB.mp4" class="card-img" autoplay loop></video>
-      <div class="card-img-overlay d-flex justify-content-start align-items-end">
+    <div class="card text-white">
+      <video src="resources/plays/ayacucho_540_26MB.mp4" class="card-img" muted="muted" autoplay loop></video>
+      <div class="card-img-overlay d-flex justify-content-center align-items-end">
         <h3>Conoce Ayacucho</h3>
       </div>
     </div>
@@ -80,70 +78,68 @@
 
   <section id="section-search">
     <div class="container">
-      <div class="row my-4">
-        <div class="col-md-6 my-4 d-flex align-items-center justify-content-center">
-          <div class="search-core border border-light w-75">
-            <div class="title-core bg-primary p-1 text-center">
+      <div class="row">
+        <div class="col-md-6 my-4 p-0 d-flex align-items-center justify-content-center">
+          <div id="search-core" class="w-100 rounded overflow-hidden invisible">
+            <div class="title-core p-1 m-2 text-center text-white rounded">
               <h2>Comprar en línea</h2>
             </div>
-            <form class="container">
-              <div class="form-row border border-warning col-auto">
+            <form class="container my-2">
+              <div class="form-row col-auto">
                 <div class="form-group w-100 my-2">
-                  <select id="select2Origen" class="form-control w-100" name="origenIda">
+                  <select id="select2Origen" class="form-control w-100" name="origenIda" style="width: 100%;">
                     <option selected></option>
                   </select>
                 </div>
               </div>
-              <!-- <div class="form-row border border-warning col-auto">
+              <div class="form-row col-auto">
                 <div class="form-group w-100 my-2">
-                  <div class="input-group input-append date" id="dateRangePickerVuelta">
-                    <select class="form-control select" id="select2Origen" placeholder="Lugar de origen"
-                      name="origenIda">
-                      <span class="input-group-addon add-on border border-secondary p-1 rounded-right">
-                        <i class="far fa-caret-square-down"></i></span>
-                  </div>
-                </div>
-              </div> -->
-              <div class="form-row border border-warning col-auto">
-                <div class="form-group w-100 my-2">
-                  <select id="select2Destino" class="form-control select-data" name="destinoIda">
+                  <select id="select2Destino" class="form-control select-data" name="destinoIda" style="width: 100%;">
                     <option selected></option>
                   </select>
                 </div>
               </div>
-              <div class="form-row border border-warning col-auto">
+              <div class="form-row col-auto">
                 <div class="form-group w-100 my-2">
                   <div class="input-group input-append date" id="dateRangePickerIda">
                     <input class="form-control datepicker" id="fechaIda" placeholder="Fecha de ida" name="fechaIda">
-                    <span class="input-group-addon add-on border border-secondary p-1 rounded-right">
+                    <span class="input-group-addon add-on border border-secondary p-1 rounded-right bg-light">
                       <i class="far fa-calendar-alt"></i></span>
                   </div>
                 </div>
               </div>
-              <div class="form-row border border-warning col-auto">
+              <div class="form-row col-auto">
                 <div class="form-group w-100 my-2">
                   <select id="cboCantidadMaximaPasajeros" class="form-control select-data"
                     name="cantidadMaximaPasajeros">
-                    <option selected></option>
+                    <option selected>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
                   </select>
                 </div>
               </div>
-              <div class="form-row border border-warning col-auto">
+              <div class="form-row col-auto">
                 <div class="form-group w-100 my-2">
                   <div class="input-group input-append date" id="dateRangePickerVuelta">
                     <input class="form-control datepicker" id="fechaVuelta" placeholder="Fecha de vuelta"
                       name="fechaVuelta">
-                    <span class="input-group-addon add-on border border-secondary p-1 rounded-right">
+                    <span class="input-group-addon add-on border border-secondary p-1 rounded-right bg-light">
                       <i class="far fa-calendar-alt"></i></span>
                   </div>
                 </div>
               </div>
-              <button type="submit" class="btn btn-primary w-100">Sign in</button>
+              <div class="form-row col-auto">
+                <button type="submit" class="btn w-100 text-white"><strong>BUSCAR</strong></button>
+              </div>
             </form>
           </div>
         </div>
         <div class="col-md-6 my-4 d-flex align-items-center justify-content-center">
-          <div class="content-figure rounded overflow-hidden">
+          <div id="content-figure" class="rounded overflow-hidden invisible">
             <img src="assets/img/celular.png" alt="aplicacion" class="img-fluid">
           </div>
         </div>
@@ -153,19 +149,22 @@
 
   <section id="section-description">
     <div class="container">
-      <div class="row d-flex justify-content-center align-items-center border border-warning">
+      <div class="row d-flex justify-content-center align-items-center">
         <div class="col-md-6 d-flex justify-content-center align-items-center">
-          <div class="content-image w-75 mx-auto">
+          <div class="content-image w-75 mx-auto invisible">
             <img src="assets/img/pardo_internacional_bus_transparent.png" class="img-fluid" alt="Santuario Ayacucho">
           </div>
 
         </div>
-        <div class="col-md-6">
-          <p>
-            VISIÓN. Llegar a Ser la empresa líder en el servicio de Transporte de Pasajeros y Carga a nivel nacional y a
-            su vez consolidarnos como una empresa de calidad, que brinda sus servicios con excelencia y eficiencia,
-            comprometiéndonos en brindar un buen servicio a nuestros clientes.
-          </p>
+        <div class="col-md-6 d-flex justify-content-center align-items-center">
+          <div class="content-text-description p-4 invisible">
+            <p class="text-description p-2 my-2">
+              VISIÓN. Llegar a Ser la empresa líder en el servicio de Transporte de Pasajeros y Carga a nivel nacional y
+              a su vez consolidarnos como una empresa de calidad, que brinda sus servicios con excelencia y eficiencia,
+              comprometiéndonos en brindar un buen servicio a nuestros clientes.
+            </p>
+          </div>
+
         </div>
       </div>
     </div>
@@ -175,25 +174,17 @@
   <section id="section-footer">
     <div class="container py-5">
       <div class="row">
-        <div class="col-md-8">
-          <h2>Terminales</h2>
-          <hr>
+        <div class="col-md-4">
+          <h2>TERMINALES</h2>
+        </div>
+        <div class="col-md-4">
+          <h6>LIMA : Atocongo - km 11.3 Panamericana Sur - counter 44</h6>
+        </div>
+        <div class="col-md-4">
+          <h6>AYACUCHO : Av Javier Pérez de Cuellar s/n Av Los Artesanos</h6>
         </div>
       </div>
-      <div class="row d-flex justify-content-center align-items-center">
-        <div class="col-md-8">
-          <h6>
-            LIMA : ATOCONGO - KM 11.3 PANAMERICAN SUR COUNTER 44
-          </h6>
-        </div>
-        <div class="col-md-4"></div>
-      </div>
-      <div class="row d-flex justify-content-center align-items-center">
-        <div class="col-md-8">
-          <h6>AYACUCHO : AV JAVIER PEREZ DE CUELLAR S/N AV LOS ARTESANOS</h6>
-        </div>
-        <div class="col-md-4"></div>
-      </div>
+      <hr>
     </div>
   </section>
 

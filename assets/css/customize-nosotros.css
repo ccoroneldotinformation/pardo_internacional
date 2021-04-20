@@ -7,6 +7,8 @@
 }
 
 body {
+    margin: 0px;
+    padding: 0px;
     background-color: var(--widht-soft);
 }
 
@@ -22,12 +24,9 @@ body {
 
 /* MEDIA */
 #section-media {
-    height: 100vh;
-    /* background-color: var(--brown-base); */
-}
-#section-media .card-img-overlay {
-    background-color: var(--blue-primary);
-    opacity: 0.3;
+    height: 50vh;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px var(--brown-base);
 }
 
 /* DESCRIPTION */
@@ -48,9 +47,6 @@ body {
     background-color: var(--blue-primary);
     color: var(--widht-soft);
 }
-/* #section-footer .row {
-    background-color: rgba(2, 68, 128, 0.2);
-} */
 #section-footer hr {
     border: 2px solid var(--brown-base);
     border-radius: 2px;

@@ -14,9 +14,4 @@ $('.datepicker').datepicker({
     todayBtn: 'linked',
     todayHighlight: true,
     autoclose: true,
-    // showOn: 'both',
-    // buttonText: '<i class="far-calendar-alt"></i>',
 })
-// .next('button')
-// .text('Show calendar')
-// .button({ icons: { primary: 'ui-icon-calendar' }, text: false })

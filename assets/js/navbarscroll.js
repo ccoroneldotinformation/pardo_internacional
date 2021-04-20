@@ -1,11 +1,11 @@
 let sectionHeader = document.querySelector('#section-header')
-console.log(sectionHeader)
+let sectionMedia = document.querySelector('#section-media')
+// console.log(sectionHeader)
 let baseScroll = 0
 window.addEventListener('scroll', function (event) {
     last_known_scroll_position = window.scrollY
-    if (
-        last_known_scroll_position >= Math.floor(window.visualViewport.height)
-    ) {
+    // console.log(sectionMedia.clientHeight)
+    if (last_known_scroll_position >= Math.floor(sectionMedia.clientHeight)) {
         sectionHeader.classList.remove('bg-transparent')
         sectionHeader.classList.add('bg-light')
     } else {

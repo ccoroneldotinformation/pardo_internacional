@@ -1,13 +1,15 @@
 :root {
     --blue-main: #353370;
     --blue-primary: rgb(2, 68, 128);
-    --orange-main: #e94116;
+    --orange-main: rgb(233, 65, 22);
     --widht-soft: #eaeaeb;
     --brown-base: rgb(69, 51, 40);
 }
 
 body {
-    background-color: var(--widht-soft);
+    padding: 0px;
+    margin: 0px;
+    background-color: var(--blue-primary);
 }
 
 /* HEADER */
@@ -19,15 +21,56 @@ body {
     -webkit-text-stroke: 1px;
     font-family: 'Archivo Black', sans-serif;
 }
+#section-header button {
+    border-color: var(--orange-main);
+    color: var(--orange-main);
+}
 
 /* MEDIA */
+#section-media * {
+    border: none;
+}
 #section-media .card-img-overlay {
+    content: '';
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    background: linear-gradient(
+        to bottom,
+        rgba(233, 65, 22, 0),
+        var(--blue-primary)
+    );
+    /* opacity: 0.3; */
+}
+
+/* SEARCH */
+#section-search {
+    background: linear-gradient(
+        to top,
+        var(--orange-main),
+        var(--blue-primary)
+    );
+}
+#search-core {
     background-color: var(--blue-primary);
-    opacity: 0.3;
+    box-shadow: 1px 0px 4px var(--brown-base), -1px 0px 4px var(--brown-base),
+        0px -1px 4px var(--blue-primary);
+}
+#search-core .title-core,
+#search-core .btn {
+    background-color: var(--orange-main);
+    box-shadow: 0px 0px 4px 2px var(--brown-base);
 }
 
 /* DESCRIPTION */
 #section-description {
+    background: linear-gradient(
+        to bottom,
+        var(--orange-main),
+        var(--blue-primary)
+    );
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 1.5em;
 }
@@ -38,17 +81,41 @@ body {
 #section-description img {
     filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.7));
 }
+#section-description .content-text-description {
+    background-color: rgba(233, 65, 22, 0.2);
+    border-radius: 10px;
+}
+#section-description .content-text-description .text-description {
+    color: var(--widht-soft);
+}
 
 /* FOOTER */
 #section-footer {
     background-color: var(--blue-primary);
     color: var(--widht-soft);
 }
-/* #section-footer .row {
-    background-color: rgba(2, 68, 128, 0.2);
-} */
 #section-footer hr {
     border: 2px solid var(--brown-base);
     border-radius: 2px;
     color: black;
+}
+
+.animationIn-LeftToRight {
+    animation: animationIn-toRight 2s ease-out normal;
+}
+
+.animationIn-RightToLeft {
+    animation: animationIn-toLeft 2s ease-out normal;
+}
+
+@keyframes animationIn-toRight {
+    0% {
+        transform: translateX(-150%);
+    }
+}
+
+@keyframes animationIn-toLeft {
+    0% {
+        transform: translateX(150%);
+    }
 }
