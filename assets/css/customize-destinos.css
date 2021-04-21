@@ -6,20 +6,6 @@
     --brown-base: rgb(69, 51, 40);
 }
 
-body {
-    background-color: var(--widht-soft);
-}
-
-/* HEADER */
-#section-header .navbar-brand img {
-    height: 60px;
-}
-#section-header .nav-link {
-    color: #e7653e;
-    -webkit-text-stroke: 1px;
-    font-family: 'Archivo Black', sans-serif;
-}
-
 /* DESCRIPTION */
 #section-description {
     font-family: 'Source Sans Pro', sans-serif;
@@ -30,16 +16,4 @@ body {
 }
 #section-description .card .card-title {
     background-color: rgba(233, 65, 22, 0.5);
-}
-
-/* FOOTER */
-#section-footer {
-    background-color: var(--blue-primary);
-    color: var(--widht-soft);
-}
-
-#section-footer hr {
-    border: 2px solid var(--brown-base);
-    border-radius: 2px;
-    color: black;
 }

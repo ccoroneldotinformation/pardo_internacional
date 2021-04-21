@@ -1,0 +1,19 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: var(--widht-soft);
+}
+
+/* HEADER */
+#section-header .navbar-brand img {
+    height: 60px;
+}
+#section-header .nav-link {
+    color: #e7653e;
+    -webkit-text-stroke: 1px;
+    font-family: 'Archivo Black', sans-serif;
+}
+#section-header button {
+    border-color: var(--orange-main);
+    color: var(--orange-main);
+}

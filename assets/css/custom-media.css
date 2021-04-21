@@ -1,0 +1,10 @@
+/* MEDIA */
+#section-media {
+    height: 50vh;
+    overflow: hidden;
+    background-image: url('../img/slideone.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0px 2px 4px var(--brown-base);
+}

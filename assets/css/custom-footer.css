@@ -1,0 +1,13 @@
+/* FOOTER */
+#section-footer {
+    background-color: var(--blue-primary);
+    color: var(--widht-soft);
+}
+#section-footer hr {
+    border: 2px solid var(--brown-base);
+    border-radius: 2px;
+    color: black;
+}
+#section-footer p span {
+    font-size: 24px;
+}

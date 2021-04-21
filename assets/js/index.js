@@ -37,6 +37,7 @@ $(window).on('scroll', function () {
         formSearch.removeClass('invisible')
         imgSearch.addClass('animationIn-RightToLeft')
         imgSearch.removeClass('invisible')
+        appliedEfectSearch = 1
     } else {
         if (
             middleWindow >= distanceDescription &&
@@ -46,6 +47,7 @@ $(window).on('scroll', function () {
             imgDescription.removeClass('invisible')
             textDescription.addClass('animationIn-RightToLeft')
             textDescription.removeClass('invisible')
+            appliedEfectDescription = 1
         }
     }
 })
