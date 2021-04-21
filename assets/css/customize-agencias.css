@@ -9,7 +9,7 @@
 /* DESCRIPTION */
 #section-description {
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 1.5em;
+    /* font-size: 1.5em; */
 }
 #section-description .card {
     box-shadow: 2px 0px 4px var(--brown-base), 0 2px 3px var(--widht-soft),

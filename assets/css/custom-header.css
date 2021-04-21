@@ -10,10 +10,17 @@ body {
 }
 #section-header .nav-link {
     color: #e7653e;
-    -webkit-text-stroke: 1px;
+    /* -webkit-text-stroke: 1px; */
     font-family: 'Archivo Black', sans-serif;
 }
 #section-header button {
     border-color: var(--orange-main);
     color: var(--orange-main);
+}
+#section-header .nav-item.active .nav-link {
+    -webkit-text-stroke: 1px;
+}
+#section-header .nav-item:hover {
+    background-color: rgba(234, 234, 235, 0.6);
+    border: 1px solid var(--orange-main);
 }

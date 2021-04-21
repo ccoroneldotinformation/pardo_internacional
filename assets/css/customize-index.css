@@ -2,7 +2,7 @@
     --blue-main: #353370;
     --blue-primary: rgb(2, 68, 128);
     --orange-main: rgb(233, 65, 22);
-    --widht-soft: #eaeaeb;
+    --widht-soft: rgb(234, 234, 235);
     --brown-base: rgb(69, 51, 40);
 }
 
@@ -39,6 +39,8 @@ body {
     );
 }
 #search-core {
+    margin-top: -50px;
+    width: 100%;
     background-color: var(--blue-primary);
     box-shadow: 1px 0px 4px var(--brown-base), -1px 0px 4px var(--brown-base),
         0px -1px 4px var(--blue-primary);
@@ -94,5 +96,21 @@ body {
 @keyframes animationIn-toLeft {
     0% {
         transform: translateX(150%);
+    }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    #search-core {
+        margin-top: -300px;
+        width: 60%;
+    }
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    #search-core {
+        margin-top: -400px;
+        width: 50%;
     }
 }
