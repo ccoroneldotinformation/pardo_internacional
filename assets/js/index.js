@@ -11,11 +11,10 @@ $('#section-header button').on('click', function () {
 })
 
 /**
- * efectos del index
+ * efectos de entrada en el index
  */
 const upLineSearch = $('#section-search #search-core').parent()
 const upLineDescription = $('#section-description .row')
-// const formSearch = $('#search-core')
 const imgSearch = $('#content-figure')
 const imgDescription = $('#section-description .content-image')
 const textDescription = $('#section-description .content-text-description')
@@ -33,8 +32,6 @@ $(window).on('scroll', function () {
         middleWindow < distanceDescription &&
         appliedEfectSearch == 0
     ) {
-        // formSearch.addClass('animationIn-LeftToRight')
-        // formSearch.removeClass('invisible')
         imgSearch.addClass('animationIn-RightToLeft')
         imgSearch.removeClass('invisible')
         appliedEfectSearch = 1

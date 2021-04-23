@@ -1,17 +1,12 @@
-// $('#fechaIda').datepicker({
-//     language: 'es',
-//     todayBtn: 'linked',
-//     todayHighlight: true,
-// })
-// $('#fechaVuelta').datepicker({
-//     language: 'es',
-//     todayBtn: 'linked',
-//     todayHighlight: true,
-// })
-
 $('.datepicker').datepicker({
     language: 'es',
     todayBtn: 'linked',
     todayHighlight: true,
     autoclose: true,
+    startDate: '+0d',
+})
+$fechaIda = $('#fechaIda')
+$fechaVuelta = $('#fechaVuelta')
+$fechaIda.datepicker().on('changeDate', function (e) {
+    $fechaVuelta.datepicker('setStartDate', e.date)
 })
