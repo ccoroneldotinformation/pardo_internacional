@@ -14,7 +14,7 @@ $(document).ready(function () {
             })
             $('#select2Destino').select2({
                 data: response.destinos,
-                placeholder: 'Lugar de Origen',
+                placeholder: 'Lugar de Destino',
                 theme: 'bootstrap4',
             })
             countItems = 0
